@@ -17,4 +17,7 @@ Route::get('/', function () {
     return ['Laravel' => app()->version()];
 });
 
+Route::get('HomeConnexion',[\App\Http\Controllers\HomeConnexion::class,'create']);
+Route::post('HomeConnexion',[\App\Http\Controllers\HomeConnexion::class,'store']);
+
 require __DIR__.'/auth.php';

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/', function () {
+Route::get('/', function () {
     return view('auth/login');
 });
 
@@ -22,6 +22,11 @@ Route::post('/', function () {
 Route::get('/mes_infos',function(){
     return view('mes_infos');
 });
+
+Route::get('mon_formulaire', function(){
+    return view('mon_formulaire');
+})->name('mon_formulaire');
+
 
 
 Route::group(['middleware' =>'auth'],function(){

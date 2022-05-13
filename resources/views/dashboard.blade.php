@@ -20,7 +20,9 @@
         <div class="rounded overflow-hidden shadow-lg">
             <div class="font-bold text-xl">Compléter mon formulaire</div>
             <br>
+            <a href="{{ route('mon_formulaire') }}">
             <img class="w-screen" src="https://contrats.espl-campus.fr/wp-content/uploads/2020/10/entreprise.png" alt="Mountain">
+            </a>
 
 
         </div>

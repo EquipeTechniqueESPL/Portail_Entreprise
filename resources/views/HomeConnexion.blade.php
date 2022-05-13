@@ -1,12 +1,10 @@
 @extends('template')
 
 @section('contenu')
+    <div class="bg-[url('https://contrats.espl-campus.fr/wp-content/uploads/2020/09/campus_bon.png')]">
+    </div>
     <br>
-    <style>
-        body {
-            background-image: url('../../public/img/campus_bon.png');
-        }
-    </style>
+
     <div class="container">
         <div class="row card text-white bg-dark">
             <h4 class="card-header">Connexion</h4>

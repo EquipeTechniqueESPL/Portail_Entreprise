@@ -13,11 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return ['Laravel' => app()->version()];
+Route::post('/', function () {
+    return view('auth/login');
 });
 
-Route::get('HomeConnexion',[\App\Http\Controllers\HomeConnexion::class,'create']);
-Route::post('HomeConnexion',[\App\Http\Controllers\HomeConnexion::class,'store']);
 
+
+Route::get('/mes_infos',function(){
+    return view('mes_infos');
+});
+
+
+Route::group(['middleware' =>'auth'],function(){
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+    Route::get('/profile',function(){
+        return view ('profile');
+    })->name('profile');
+});
 require __DIR__.'/auth.php';

@@ -20,5 +20,10 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+    <style>
+        body{
+            background-image: url("../public/img/campus_bon.png");
+        }
+    </style>
     </body>
 </html>

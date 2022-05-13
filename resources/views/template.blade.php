@@ -16,11 +16,8 @@
 </head>
 <body>
 <style>
-    body
-    {
-        background-image: url({{url('https://contrats.espl-campus.fr/wp-content/uploads/2020/09/campus_bon.png')}});
-        height: 400px;
-        width: 100%;
+    body{
+        background:red;
     }
 </style>
 @yield('contenu')

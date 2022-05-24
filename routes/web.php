@@ -27,6 +27,10 @@ Route::get('mon_formulaire', function(){
     return view('mon_formulaire');
 })->name('mon_formulaire');
 
+//Route::get('mes_infos', function(){
+//    return view('mes_infos');
+//})->name('mes_infos');
+
 
 
 Route::group(['middleware' =>'auth'],function(){

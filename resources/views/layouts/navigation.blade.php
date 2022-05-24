@@ -23,6 +23,12 @@
                     </x-nav-link>
                 </div>
 
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-nav-link :href="route('mes_infos')" :active="request()->routeIs('mes_infos')">--}}
+{{--                        {{ __('Mes Informations') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
+
             </div>
 
             <!-- Settings Dropdown -->
